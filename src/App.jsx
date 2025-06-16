@@ -15,6 +15,10 @@ const App = () => {
           path="*"
           element={<NotFoundPage />}
         />
+        <Route
+          path="/not-found"
+          element={<NotFoundPage />}
+        />
       </Routes>
     </BrowserRouter>
   );
