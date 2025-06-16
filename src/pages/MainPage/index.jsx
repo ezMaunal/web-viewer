@@ -1,12 +1,16 @@
+import { useParams } from "react-router-dom";
+
 const MainPage = () => {
+  const { manualId } = useParams();
+
   return (
     <>
       <div class="mx-auto max-w-3xl px-4 pt-3 pb-12 sm:px-6 lg:px-8 lg:pt-5">
         <div className="mb-10 w-full rounded-lg bg-orange-500 py-3 text-center text-white">
-          <span className="text-3xl">ezManual</span>
+          <span className="text-3xl">ezManual {manualId}</span>
         </div>
 
-        <div class="max-w-2xl">
+        <div class="w-full">
           <div className="fw-bold mb-3 text-3xl">처음부터 만드는 크롬 확장 프로그램</div>
           <hr className="my-5 border-t border-gray-300" />
 
