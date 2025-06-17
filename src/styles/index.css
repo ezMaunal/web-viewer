@@ -1,1 +1,20 @@
 @import "tailwindcss";
+
+#manualSwiper .swiper-button-next{
+  right:20px;
+  @apply text-orange-400;
+}
+#manualSwiper .swiper-button-prev{
+  left:20px;
+  @apply text-orange-400;
+}
+#manualSwiper .swiper-pagination {
+  top: 5px;
+  right: 10px;
+  left: auto;
+  bottom: auto;
+  position: absolute;
+  z-index: 10;
+  color: #f97316;
+  font-weight: bold;
+}
